@@ -171,21 +171,21 @@ img.hover-shadow {
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Início
+            <a class="nav-link" href="index.html">Início
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quem Somos</a>
+            <a class="nav-link" href="sobre.html">Quem Somos</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="#">Produtos</a>
+            <a class="nav-link" href="produtos.html">Produtos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Serviços</a>
+            <a class="nav-link" href="servicos.html">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="contato.html">Contato</a>
           </li>
         </ul>
       </div>
@@ -206,19 +206,21 @@ img.hover-shadow {
   </section>
   
   <!-- Main Class -->
+<div class="container">
   <main class="main">
-	<div class="row">
+  <div class="row">
+	<div class="column">
+	  <img alt="A Espada do Destino" src="images/espada.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	</div>
   <div class="column">
-    <img alt="Jane Austen" src="images/jane.webp" height="900px" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img alt="Sangue dos Elfos" src="images/sangue.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img alt="A Garota do Lago" src="images/garota-lago.webp" height="900px" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <img alt="O Último Desejo" src="images/desejo.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img alt="Mitologia Nordica" src="images/mitologia.webp" height="900px" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img alt="A Torre da Andorinha" src="images/andorinha.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
-  <div class="column">
-    <img alt="Dracula" src="images/dracula.webp" height="900px" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
 </div>
 
@@ -228,22 +230,22 @@ img.hover-shadow {
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="images/jane.webp" style="width:75%">
+      <img src="images/espada.jpg">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="images/garota-lago.webp" style="width:75%">
+      <img src="images/sangue.jpg">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="images/mitologia.webp" style="width:75%">
+      <img src="images/desejo.jpg">
     </div>
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="images/dracula.webp" style="width:75%">
+      <img src="images/andorinha.jpg">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -252,21 +254,23 @@ img.hover-shadow {
     <div class="caption-container">
       <p id="caption"></p>
     </div>
+  </div>
 
-
+<div class="container">
     <div class="column">
-      <img class="demo cursor" src="images/jane.webp" style="width:25%" onclick="currentSlide(1)">
+      <img class="demo cursor" src="images/espada.jpg" style="width:100%" onclick="currentSlide(1)">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/garota-lago.webp" style="width:25%" onclick="currentSlide(2)">
+      <img class="demo cursor" src="images/sangue.jpg" style="width:100%" onclick="currentSlide(2)">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/mitologia.webp" style="width:25%" onclick="currentSlide(3)">
+      <img class="demo cursor" src="images/desejo.jpg" style="width:100%" onclick="currentSlide(3)">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/dracula.webp" style="width:25%" onclick="currentSlide(4)">
+      <img class="demo cursor" src="images/andorinha.jpg" style="width:100%" onclick="currentSlide(4)">
     </div>
   </div>
+</div>
 </div>
 
 <script>
@@ -342,5 +346,4 @@ function showSlides(n) {
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
